@@ -1,3 +1,21 @@
-<p>
-  photo-list works!
-</p>
+<div class="firstSegment">
+  <div class="firstSegmentTitle">
+    <h2>Welcome Back!</h2>
+  </div>
+    <table>
+        <tr *ngFor="let photo of myPhotos | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
+            <a (click) = "onPhotoSelected(photo)"><div class="photodiv">
+                {{photo.title}}
+            </div></a>
+        </tr>
+    </table>
+    <ngb-pagination 
+      [collectionSize]="checkSize()" 
+      [pageSize]="pageSize"
+      [(page)]="page" 
+      [maxSize]="5" 
+      [rotate]="true" 
+      [ellipses]="false" 
+      [boundaryLinks]="true">
+    </ngb-pagination>
+</div>
