@@ -1,3 +1,7 @@
-<p>
-  photo-detail works!
-</p>
+<div *ngIf=(myPhoto) class="secondSegment">
+  <div class="title">{{myPhoto.title}}</div>
+  <div class="imageDiv">
+      <img src="{{myPhoto.thumbnailUrl}}">
+      <img src="{{myPhoto.url}}" class="img-top">
+  </div>
+</div>

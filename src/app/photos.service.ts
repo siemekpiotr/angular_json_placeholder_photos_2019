@@ -14,4 +14,9 @@ export class PhotosService {
   getPhotos(){
     return this.http.get<Photo[]>(this.photosUrl + '/photos');
   }
+
+  // getPhoto(photoId: string): Observable<Photo[]>{
+  //   let params = new HttpParams().set('id', photoId);
+  //   return this.http.get<Photo[]>(this.photosUrl + '/photos', {params});
+  // }
 }

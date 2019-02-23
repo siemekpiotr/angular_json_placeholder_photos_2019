@@ -29,6 +29,5 @@ export class PhotoListComponent implements OnInit {
 
   onPhotoSelected(photoId: Photo){
     this.imageId = photoId;
-    console.log(photoId)
   }
 }
