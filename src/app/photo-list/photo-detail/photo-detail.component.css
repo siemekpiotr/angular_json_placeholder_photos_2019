@@ -1,11 +1,3 @@
-.secondSegment{
-    display:flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    padding:10px;
-    /* border:1px solid black; */
-}
-
 .title{
     padding:10px;
 }
@@ -20,6 +12,7 @@ img{
     position: relative;
     display: inline-block;
     /* align-self: center; */
+    width:100%;
 }
 .imageDiv .img-top {
     display: none;
@@ -29,8 +22,9 @@ img{
     z-index: 99;
 }
 .imageDiv:hover .img-top {
-    width: 600px;
-    display: inline;
+    display:block;
+    width: 100%;
+    max-width: 600px;
     border-radius: 0%;
 }
 
@@ -49,7 +43,7 @@ img{
         left: 0;
     }
     .imageDiv:hover .img-top {
-        width: 100%;
         object-fit: contain;
+        max-width: 100%;
     }
 }

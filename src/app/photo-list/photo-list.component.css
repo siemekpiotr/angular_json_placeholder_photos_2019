@@ -8,7 +8,7 @@
 .firstSegment{
     display: flex;
     flex-direction: column;
-    width:42%;
+    width:70%;
     padding: 10px;
     /* border-right: 1px solid #eeeeee; */
     /* border-bottom: 1px solid #eeeeee; */
@@ -19,6 +19,14 @@
     -webkit-transform: rotate(180deg); /* Safari 3-8 */
     transform: rotate(180deg);
     text-align: center;
+    width: 100%;
+}
+
+.secondSegment{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding:10px;
     width: 100%;
 }
 
@@ -34,6 +42,7 @@
 
 .photodiv:hover{
     background-color: lightgray;
+    cursor: pointer;
 }
 
 ngb-pagination{
@@ -45,11 +54,6 @@ ngb-pagination{
 ngb-pagination ::ng-deep .pagination .page-item .page-link {
     border-radius: 0 !important;
 }
-
-app-image-detail{
-    width:70%;
-}
-
 
 @media all and (max-width: 800px) {
     .firstSegment{
